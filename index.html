@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newsDPedro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Newsletter - Cinema Parque D. Pedro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.min.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class="page-header">
+            <p class="see-link">Problemas visualizando o email?<a href="#"> Veja no seu computador</a></p>
+            <nav class="social">
+                <a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </nav>
+            <hr>
+            <div class="infos-cinema">
+                <h1>Em Cartaz no <br><span>Parque D. Pedro</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque laudantium exercitationem ut dolorem
+                    rem dolor deserunt. Dignissimos accusantium minus magnam sed, ipsa consequuntur, consectetur, debitis nemo
+                    facilis voluptas distinctio.</p>
+            </div>
+        </div>
+        <!-- .page-header -->
+        <!-- <div class="featured" ng-bind="featured.id">
+        </div> 
+        <div class="movies" ng-repeat="movie in movies">
+            <h1 ng-bind="movie.title"></h1>
+        </div>   -->
+        <div class="featured">
+            <figure>
+                <img class="img-responsive" ng-src="{{featured.backdrop}}" alt="">
+                <figcaption>Destaque da semana</figcaption>
+            </figure>
+            <div class="imdb-rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                {{featured.imdb_rating}}
+                <sup><a ng-href="{{featured.imdb_url}}" target="_blank">IMDB</a></sup>
+                <!-- {{featured.imdb_rating}} -->
+            </div>
+            <h2 class="featured-title">{{featured.title}}</h2>
+            <p class="featured-description">{{featured.description}}</p>
+            <div class="infos">
+                <span class="genre">Ação</span> - <span class="duration">133 min</span> - <span class="rating" >12 anos</span>
+                <span class="genre">Ação</span> - <span class="duration">133 min</span> - <span class="rating" >12 anos</span>
+            </div>
+            <nav class="nav-infos">
+                <a href="#"></a>
+                <a href=""></a>
+                <a href=""></a>
+            </nav>
+        </div>
+        <!-- .featured -->
+    </div>
+    <!-- .container -->
+</body>
+<script src="js/main.js"></script>
+<script src="js/values.js"></script>
+<script src="js/service.js"></script>
+</html>
